@@ -51,11 +51,13 @@ const PlanetDetails = (props) => {
         : <img src="https://media1.tenor.com/m/fc47Cmt6yn4AAAAC/star-wars-disney.gif">
         </img>}
 
-      <Link to="/">
-        <span className="btn btn-success btn-lg" href="#" role="button">
-          Back home
-        </span>
-      </Link>
+        <div className="container-fluid d-flex align-items-center justify-content-center">
+            <Link to="/">
+                <span className="btn btn-success btn-lg" href="#" role="button">
+                Back home
+                </span>
+            </Link>
+        </div>
     </div>
   );
 };
