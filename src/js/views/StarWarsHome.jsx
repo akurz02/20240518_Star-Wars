@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {Context} from "../store/appContext";
+import {Context} from "../store/appContext.js";
 import PeopleCard from "../component/PeopleCard.jsx";
 import VehicleCard from "../component/VehicleCard.jsx";
 import PlanetCard from "../component/PlanetCard.jsx";

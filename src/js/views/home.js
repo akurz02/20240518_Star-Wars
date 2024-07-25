@@ -1,9 +1,11 @@
 import React from "react";
-import "../../styles/home.css";
 import StarWarsHome from "./StarWarsHome.jsx";
+import "../../styles/home.css";
 
 export const Home = () => (
 	<>
+	<div>
 		<StarWarsHome />
+	</div>
 	</>
 );
