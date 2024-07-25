@@ -23,10 +23,10 @@ const VehicleCard = ({ vehicle, uid, url }) => {
             className="card-img-top"
             alt=""
           />
-          <div className="card-body">
-            <h5 className="card-title">{vehicle}</h5>
+          <div className="card-body bg-dark">
+            <h5 className="card-title text-warning">{vehicle}</h5>
             <Link to={`/vehicle/${uid}`}>
-              <button className="btn btn-danger">Vehicles</button>
+              <button className="btn btn-success">Vehicles</button>
             </Link>
             <Link>
               <button className="btn btn btn-outline-warning m-1" onClick={() => handleFavorites()}>

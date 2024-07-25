@@ -17,21 +17,21 @@ const PersonDetails = () => {
         <div className="container-fluid d-flex align-items-center justify-content-center">
           {store.personDetails && (
             <>
-              <div className="mb-3 bg-dark" style={{ width: "80%" }}>
+              <div className="mb-3" style={{ width: "80%" }}>
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`} className="img-fluid rounded-start" alt="..." />
                   </div>
-                  <div className="col-md-8 bg-dark">
+                  <div className="col-md-8">
                     <div className="card-body">
-                      <h1 className="card-title text-warning">{store.personDetails.properties.name}</h1>
-                      <p className="card-text text-warning fs-4">Birth Year: {store.personDetails.properties.birth_year}</p>
-                      <p className="card-text text-warning fs-4">Gender: {store.personDetails.properties.gender}</p>
-                      <p className="card-text text-warning fs-4">Height: {store.personDetails.properties.height}</p>
-                      <p className="card-text text-warning fs-4">Skin Color: {store.personDetails.properties.skin_color}</p>
-                      <p className="card-text text-warning fs-4">Hair Color: {store.personDetails.properties.hair_color}</p>
-                      <p className="card-text text-warning fs-4">Mass: {store.personDetails.properties.mass}</p>
-                      <p className="card-text text-warning fs-4">Eye Color: {store.personDetails.properties.eye_color}</p>
+                      <h1 className="card-title">{store.personDetails.properties.name}</h1>
+                      <p className="card-text fs-4">Birth Year: {store.personDetails.properties.birth_year}</p>
+                      <p className="card-text fs-4">Gender: {store.personDetails.properties.gender}</p>
+                      <p className="card-text fs-4">Height: {store.personDetails.properties.height}</p>
+                      <p className="card-text fs-4">Skin Color: {store.personDetails.properties.skin_color}</p>
+                      <p className="card-text fs-4">Hair Color: {store.personDetails.properties.hair_color}</p>
+                      <p className="card-text fs-4">Mass: {store.personDetails.properties.mass}</p>
+                      <p className="card-text fs-4">Eye Color: {store.personDetails.properties.eye_color}</p>
                     </div>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ const PersonDetails = () => {
         </img>}
 
       <Link to="/">
-        <span className="btn btn-primary btn-lg" href="#" role="button">
+        <span className="btn btn-success btn-lg" href="#" role="button">
           Back home
         </span>
       </Link>

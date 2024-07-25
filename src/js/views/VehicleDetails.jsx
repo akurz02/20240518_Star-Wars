@@ -18,21 +18,21 @@ const VehicleDetails = (props) => {
         <div className="container-fluid d-flex align-items-center justify-content-center">
           {store.vehicleDetails && (
             <>
-              <div className="card mb-3 bg-dark" style={{ width: "80%", height: "100%" }}>
+              <div className="card mb-3" style={{ width: "80%", height: "100%" }}>
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img src={`https://starwars-visualguide.com/assets/img/vehicles/${id}.jpg`} className="img-fluid rounded-start" alt="..." />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
-                      <h3 className="card-title text-warning">{store.vehicleDetails.properties.name}</h3>
-                      <p className="card-text text-warning fs-4">Manufacturer: {store.vehicleDetails.properties.manufacturer}</p>
-                      <p className="card-text text-warning fs-4">Vehicle Class: {store.vehicleDetails.properties.vehicle_class}</p>
-                      <p className="card-text text-warning fs-4">Cost in Credits: {store.vehicleDetails.properties.cost_in_credits}</p>
-                      <p className="card-text text-warning fs-4">Vehicle Model: {store.vehicleDetails.properties.model}</p>
-                      <p className="card-text text-warning fs-4">Max Speed: {store.vehicleDetails.properties.max_atmosphering_speed}</p>
-                      <p className="card-text text-warning fs-4">Passengers: {store.vehicleDetails.properties.passengers}</p>
-                      <p className="card-text text-warning fs-4">Cargo Capacity: {store.vehicleDetails.properties.cargo_capacity}</p>
+                      <h3 className="card-title">{store.vehicleDetails.properties.name}</h3>
+                      <p className="card-text fs-4">Manufacturer: {store.vehicleDetails.properties.manufacturer}</p>
+                      <p className="card-text fs-4">Vehicle Class: {store.vehicleDetails.properties.vehicle_class}</p>
+                      <p className="card-text fs-4">Cost in Credits: {store.vehicleDetails.properties.cost_in_credits}</p>
+                      <p className="card-text fs-4">Vehicle Model: {store.vehicleDetails.properties.model}</p>
+                      <p className="card-text fs-4">Max Speed: {store.vehicleDetails.properties.max_atmosphering_speed}</p>
+                      <p className="card-text fs-4">Passengers: {store.vehicleDetails.properties.passengers}</p>
+                      <p className="card-text fs-4">Cargo Capacity: {store.vehicleDetails.properties.cargo_capacity}</p>
                     </div>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ const VehicleDetails = (props) => {
         </img>}
 
       <Link to="/">
-        <span className="btn btn-primary btn-lg" href="#" role="button">
+        <span className="btn btn-success btn-lg" href="#" role="button">
           Back home
         </span>
       </Link>

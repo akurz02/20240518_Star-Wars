@@ -19,7 +19,7 @@ const PlanetDetails = (props) => {
         <div className="container-fluid d-flex align-items-center justify-content-center">
           {store.planetDetails && (
             <>
-              <div className="card mb-3 bg-dark" style={{ width: "90%", height: "100%" }}>
+              <div className="card mb-3" style={{ width: "90%", height: "100%" }}>
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img src={
@@ -31,14 +31,14 @@ const PlanetDetails = (props) => {
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
-                      <h3 className="card-title text-warning">{store.planetDetails.properties.name}</h3>
-                      <p className="card-text text-warning fs-4">Terrain: {store.planetDetails.properties.terrain}</p>
-                      <p className="card-text text-warning fs-4">Population: {store.planetDetails.properties.population}</p>
-                      <p className="card-text text-warning fs-4">Climate: {store.planetDetails.properties.climate}</p>
-                      <p className="card-text text-warning fs-4">Diameter: {store.planetDetails.properties.diameter}</p>
-                      <p className="card-text text-warning fs-4">Days in 1 Year: {store.planetDetails.properties.orbital_period}</p>
-                      <p className="card-text text-warning fs-4">Hours in 1 day: {store.planetDetails.properties.rotation_period}</p>
-                      <p className="card-text text-warning fs-4">Gravity: {store.planetDetails.properties.gravity}</p>
+                      <h3 className="card-title">{store.planetDetails.properties.name}</h3>
+                      <p className="card-text fs-4">Terrain: {store.planetDetails.properties.terrain}</p>
+                      <p className="card-text fs-4">Population: {store.planetDetails.properties.population}</p>
+                      <p className="card-text fs-4">Climate: {store.planetDetails.properties.climate}</p>
+                      <p className="card-text fs-4">Diameter: {store.planetDetails.properties.diameter}</p>
+                      <p className="card-text fs-4">Days in 1 Year: {store.planetDetails.properties.orbital_period}</p>
+                      <p className="card-text fs-4">Hours in 1 day: {store.planetDetails.properties.rotation_period}</p>
+                      <p className="card-text fs-4">Gravity: {store.planetDetails.properties.gravity}</p>
                     </div>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const PlanetDetails = (props) => {
         </img>}
 
       <Link to="/">
-        <span className="btn btn-primary btn-lg" href="#" role="button">
+        <span className="btn btn-success btn-lg" href="#" role="button">
           Back home
         </span>
       </Link>

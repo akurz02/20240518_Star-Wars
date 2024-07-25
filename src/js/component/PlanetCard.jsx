@@ -28,10 +28,10 @@ const PlanetCard = ({ planet, uid, url }) => {
             className="card-img-top"
             alt=""
           />
-          <div className="card-body">
-            <h5 className="card-title">{planet}</h5>
+          <div className="card-body bg-dark">
+            <h5 className="card-title text-warning">{planet}</h5>
             <Link to={`/planets/${uid}`}>
-              <button className="btn btn-danger">Planets</button>
+              <button className="btn btn-success">Planets</button>
             </Link>
             <Link>
               <button className="btn btn btn-outline-warning m-1" onClick={() => handleFavorites()}>

@@ -23,13 +23,13 @@ const PeopleCard = ({ name, uid, url, }) => {
             className="card-img-top"
             alt=""
           />
-          <div className="card-body bg-black-50">
-            <h5 className="card-title">{name}</h5>
+          <div className="card-body bg-dark">
+            <h5 className="card-title text-warning">{name}</h5>
             {/* <p className="">Gender:{store.personDetails && store.personDetails.properties.gender}</p>
             <p className="">Hair-Color:{store.personDetails && store.personDetails.properties.hair_color}</p>
             <p className="">Eye-Color:{store.personDetails && store.personDetails.properties.eye_color}</p> */}
             <Link to={`/people/${uid}`}>
-              <button className="btn btn-danger">Learn more</button>
+              <button className="btn btn-success">Learn more</button>
             </Link>
 
             <Link>
